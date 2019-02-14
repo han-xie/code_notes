@@ -1,5 +1,6 @@
 # code_notes
 This repository contains my own notes of code for various purposes.
+I also use it to synchronize codes among different devices.
 
 [python](./python)
 ```block
@@ -10,5 +11,5 @@ python scripts
 [matlab](./matlab)
 ```block
 matlab examples
-|--01_audio_plot.m: plot waveform of audio files (channels splitted)
+|--audio_plot.m: plot waveform of audio files (channels splitted)
 ```

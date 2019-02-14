@@ -19,4 +19,4 @@ for channel = 1:n_channels
     ylabel(strcat('track-', int2str(channel)));
 end
 xlabel('time (seconds)');
-title(p(1), 'Waveform for the input audio');
+title(p(1), strcat('Waveform (Frequency=', int2str(fs), 'Hz)'));
