@@ -1,6 +1,6 @@
 /* apt install -y libogg-dev libflac-dev libvorbis-dev
  * install libsndfile from github (https://github.com/erikd/libsndfile.git)
- * g++ -o sndinfo sndinfo.cpp -lsndfile -logg -lFLAC -lvorbis -lvorbisenc
+ * g++ -o 02_sndinfo 02_sndinfo.cpp -lsndfile -logg -lFLAC -lvorbis -lvorbisenc
  */
 #include <iostream>
 #include <cstring>
@@ -29,13 +29,14 @@ int main(int argc, char** argv){
   if (!(file = sf_open(argv[1], SFM_READ, &info))) {
     std::cout<<"sndfile: unknown format or could not open file - "
              << argv[1]<<std::endl;
+    exit(1);
   }
   std::cout<<"========================================"<<std::endl;
   sf_command(file, SFC_GET_LOG_INFO, strbuffer, BUFFER_LEN);
   std::cout<<strbuffer;
   std::cout<<"----------------------------------------"<<std::endl;
   std::cout<<"Sample Rate : "<<info.samplerate<<std::endl;
-  std::cout<<"Frames      : "<<info.frames<<std::endl;;
+  std::cout<<"Frames      : "<<info.frames<<std::endl;
   std::cout<<"Channels    : "<<info.channels<<std::endl;
   return 0;
 }
