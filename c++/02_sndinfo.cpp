@@ -15,6 +15,7 @@ program_name (const char * argv0)
 
   tmp = strrchr (argv0, '/') ;
   argv0 = tmp ? tmp + 1 : argv0 ;
+  return argv0;
 } /* program_name: libsndfile -> common.c */
 
 int main(int argc, char** argv){
