@@ -9,6 +9,8 @@ c/c++ code examples
 |--02_sndinfo.cpp: print some basic infomation of an audio file
 |--03_gnuplot_test.cpp: plot y=x^3 and output to a png file
 |--04_hello_pthread.c: demonstrates thread creation and termination
+|--05_progress_bar.c: show a sample progress bar: 10.0% [=        ]
+|--06_weekday.c: a program that shows the weekday of a certain date
 ```
 
 [python](./python)
