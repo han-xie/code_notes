@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
   }
 
   printf("[SUCCESS] Output UUID Version 1:\n%s\n", output);
+  free(output);
 
   if ((rc = uuid_destroy(uuid)) != UUID_RC_OK) {
     printf("[ERROR] uuid_destroy: %s\n", uuid_error(rc));
