@@ -13,6 +13,7 @@ c/c++ code examples
 |--05_progress_bar.c: show a sample progress bar: 10.0% [=        ]
 |--06_weekday.c: a program that shows the weekday of a certain date
 |--07_str_to_long_int.c: convert an input argument to long integer
+|--08_uuid_ossp.c: a sample code to generate uuid1 with ossp-uuid
 ```
 
 [python](./python)

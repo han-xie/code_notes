@@ -3,6 +3,9 @@
  * REFERENCES:
  * https://stackoverflow.com/questions/9748393/how-can-i-get-argv-as-int
  * http://www.cplusplus.com/reference/cstdlib/strtol
+ * 
+ * EXAMPLES:
+ * 1. uuid-1.6.2/uuid_cli.c: getopt and strtol are used
  *
  * COMPILATION: gcc -o 07_str_to_long_int 07_str_to_long_int.c
  */
@@ -25,3 +28,4 @@ int main(int argc, char** argv) {
   
   return 0;
 }
+
