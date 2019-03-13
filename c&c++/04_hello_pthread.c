@@ -11,35 +11,39 @@
 *   termination.
 * AUTHOR: Blaise Barney
 * LAST REVISED: 08/09/11
+******************************************************************************
+* When this program is running,  $ pstree -p [PID] command can be used to view
+* thread tree. $ top -Hp [PID] can also be used to view threads.
+* [PID] can be found with $ ps -a | grep 04_hello_pthread command.
 ******************************************************************************/
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h> /* sleep */
 #define NUM_THREADS	5
 
-void *PrintHello(void *threadid)
-{
-   long tid;
-   tid = (long)threadid;
-   printf("Hello World! It's me, thread #%ld!\n", tid);
-   pthread_exit(NULL);
+void *PrintHello(void *threadid) {
+  long tid;
+  tid = (long)threadid;
+  sleep(20);
+  printf("Hello World! It's me, thread #%ld!\n", tid);
+  pthread_exit(NULL);
 }
 
-int main(int argc, char *argv[])
-{
-   pthread_t threads[NUM_THREADS];
-   int rc;
-   long t;
-   for(t=0;t<NUM_THREADS;t++){
-     printf("In main: creating thread %ld\n", t);
-     rc = pthread_create(&threads[t], NULL, PrintHello, (void *)t);
-     if (rc){
-       printf("ERROR; return code from pthread_create() is %d\n", rc);
-       exit(-1);
-       }
-     }
+int main(int argc, char *argv[]) {
+  pthread_t threads[NUM_THREADS];
+  int rc;
+  long t;
+  for(t=0;t<NUM_THREADS;t++) {
+    printf("In main: creating thread %ld\n", t);
+    rc = pthread_create(&threads[t], NULL, PrintHello, (void *)t);
+    if (rc){
+      printf("ERROR; return code from pthread_create() is %d\n", rc);
+      exit(-1);
+    }
+  }
 
-   /* Last thing that main() should do */
-   pthread_exit(NULL);
+  /* Last thing that main() should do */
+  pthread_exit(NULL);
 }
 
