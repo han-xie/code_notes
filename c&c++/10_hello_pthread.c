@@ -1,20 +1,21 @@
 /******************************************************************************
 * ACKNOWLEDGEMENT: Blaise Barney
-* REFERENCE: https://computing.llnl.gov/tutorials/pthreads/samples/hello.c
-* - https://computing.llnl.gov/tutorials/pthreads/ (last accessed 02/03/19)
+* REFERENCES: https://computing.llnl.gov/tutorials/pthreads/samples/hello.c
+* - https://computing.llnl.gov/tutorials/pthreads/ (accessed Mar. 02, 2019)
 *   I put it in my github for learning purpose only, please refer to the link
 *   above for the original information.
-* COMPILATION: gcc -pthread -o 04_hello_pthread 04_hello_pthread.c
-* FILE: 04_hello_pthread.c
+* COMPILATION: gcc -pthread -o 10_hello_pthread 10_hello_pthread.c
+* FILE: 10_hello_pthread.c
 * DESCRIPTION:
 *   A "hello world" Pthreads program.  Demonstrates thread creation and
 *   termination.
 * AUTHOR: Blaise Barney
-* LAST REVISED: 08/09/11
+* LAST REVISED: Aug. 9, 2011
 ******************************************************************************
 * When this program is running,  $ pstree -p [PID] command can be used to view
 * thread tree. $ top -Hp [PID] can also be used to view threads.
 * [PID] can be found with $ ps -a | grep 04_hello_pthread command.
+* REFERENCE: https://www.cnblogs.com/kevingrace/p/5252919.html
 ******************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
