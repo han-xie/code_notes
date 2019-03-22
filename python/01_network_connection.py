@@ -1,4 +1,11 @@
 #!/usr/bin/python
+
+'''
+References:
+1. search "best way to detect network connection in python"
+2. https://stackoverflow.com/questions/3764291/checking-network-connection
+'''
+
 import os
 import time
 
