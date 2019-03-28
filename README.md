@@ -18,6 +18,7 @@ c/c++ code examples
 |--10_hello_pthread.c: demonstrate thread creation and termination
 |--11_pthread_arg.c: demonstrate passing arguments to threads
 ```
+[12_pthread_cancel](https://github.com/Parchilor/pthread_cancel.git)
 
 [python](./python)
 ```block
