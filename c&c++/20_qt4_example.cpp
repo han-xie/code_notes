@@ -1,6 +1,9 @@
 /* PREREQUISITE:
  * Ubuntu / Debian: sudo apt install qt4-dev-tools libqtgui4 libqtcore4
  *
+ * REFERENCE:
+ * [Book] C++ GUI Programming with Qt 4
+ *
  * COMPILATION:
  * g++ -o qt_gui 20_qt4_example.cpp -I /usr/include/qt4/ -lQtGui -lQtCore
  */
