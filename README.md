@@ -22,6 +22,7 @@ c/c++ code examples | description
 [12_pthread_cancel](https://github.com/Parchilor/pthread_cancel.git) | demonstrate using pthread_cancel
 20_qt4_example.cpp | a simple GUI example using qt4
 21_x11_window.c | a GUI window sample using Xlib
+22_x11_text.c | a GUI window displaying text
 
 [python](./python)
 
