@@ -27,6 +27,7 @@ main (argc, argv)
 {
         Display *dpy;
         Window  w;
+        int screen;
         XFontSet fontset;
         char **missing_charsets;
         int num_missing_charsets;
@@ -56,9 +57,14 @@ main (argc, argv)
         }
 
         dpy = XOpenDisplay ( NULL);
-        w   = XCreateSimpleWindow ( dpy, RootWindow( dpy, 0 ), 50, 50,
-                                        1000, 1000, 5, BlackPixel( dpy, 0 ),
-                                        WhitePixel( dpy, 0 ) );
+        if ( !dpy ) {
+          fprintf(stderr, "%s: cannot open display\n", program_name);
+          exit(1);
+        }
+        screen = DefaultScreen (dpy);
+        w   = XCreateSimpleWindow ( dpy, RootWindow( dpy, screen ), 50, 50,
+                                        1000, 1000, 5, BlackPixel( dpy, screen ),
+                                        WhitePixel( dpy, screen ) );
         gc = XCreateGC ( dpy, w, 0L, ( XGCValues * ) NULL );
 
         fontset = XCreateFontSet (dpy, "-*-*-*-*-*-*-16-*-*-*-*-*-*-*",
