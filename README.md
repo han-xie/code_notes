@@ -24,6 +24,7 @@ c/c++ code examples | description
 21_x11_window.c | a GUI window sample using Xlib
 22_x11_text.c | a GUI window displaying text
 23_x11_chinese.c | a GUI window displaying Chinese text
+25_map\&unique_ptr.cpp | a test for unordered_map and unique_ptr
 
 [python](./python)
 
