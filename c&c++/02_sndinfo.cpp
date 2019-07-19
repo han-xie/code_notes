@@ -39,5 +39,6 @@ int main(int argc, char** argv){
   std::cout<<"Sample Rate : "<<info.samplerate<<std::endl;
   std::cout<<"Frames      : "<<info.frames<<std::endl;
   std::cout<<"Channels    : "<<info.channels<<std::endl;
+  sf_close(file);
   return 0;
 }
