@@ -40,3 +40,9 @@ matlab examples | description
 ---|---
 audio_plot.m | plot waveform of audio files (channels splitted)
 
+[shell](./shell)
+
+shell scripts | description
+---|---
+01_argument.sh | script with optional\&necessary arguments
+
