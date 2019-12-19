@@ -47,4 +47,4 @@ audio_plot.m | plot waveform of audio files (channels splitted)
 shell scripts | description
 ---|---
 01_argument.sh | script with optional\&necessary arguments
-
+02_awk.sh | demonstrate usage of awk, if and while ...
