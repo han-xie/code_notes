@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char** argv){
     cout<<"你好，世界！"<<endl;
     cout<<argc<<endl;
-    cout<<argv[1]<<endl;
+    if (argc > 1) cout<<argv[1]<<endl;
     return 0;
 }
 
