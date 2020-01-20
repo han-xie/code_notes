@@ -21,6 +21,7 @@ c/c++ code examples | description
 11_pthread_arg.c | demonstrate passing arguments to threads
 [12_pthread_cancel](https://github.com/Parchilor/pthread_cancel.git) | demonstrate using pthread_cancel
 13_callback.c | demonstrate usage of callback function
+14_sink_callback.cc | demonstrate sink in place of callback in C++
 20_qt4_example.cpp | a simple GUI example using qt4
 21_x11_window.c | a GUI window sample using Xlib
 22_x11_text.c | a GUI window displaying text
