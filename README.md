@@ -51,3 +51,8 @@ shell scripts | description
 01_argument.sh | script with optional\&necessary arguments
 02_awk.sh | demonstrate usage of awk, if and while ...
 03_search_keyword.sh | find keyword in the files in some path
+
+[swig](./swig)
+
+This folder contains an example to generate the python wrapper from c++ objective files.
+
